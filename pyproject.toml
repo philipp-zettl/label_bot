@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "label-bot"
+version = "0.0.0"
+description = "A telegram bot that can be used to collect chat messages"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "label_bot"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+python-telegram-bot = "^20.3"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-coverage = "^0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
