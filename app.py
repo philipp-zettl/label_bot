@@ -92,7 +92,7 @@ async def upload_list(update, context):
 
 async def set_categories(update, context):
     global STATE
-    labels = update.message.text.split(' ')
+    labels = update.message.text.split(';')
     STATE[update.effective_chat.id]['labels'] = labels
     STATE[update.effective_chat.id]['keyboard'] = InlineKeyboardMarkup([
         [
